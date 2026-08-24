@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pyrrho</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      color: #000000;
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 0.85rem;
+      line-height: 1.55;
+    }
+
+    #wrap {
+      width: min(100%, 820px);
+      box-sizing: border-box;
+      margin: 0 auto;
+      padding: 0.8rem 1rem 3rem;
+    }
+
+    #nav {
+      font-size: 0.85rem;
+      margin-bottom: 0.8rem;
+    }
+
+    #nav a {
+      color: #0000cc;
+      text-decoration: underline;
+    }
+
+    #nav a:hover { text-decoration: none; }
+
+    h1 {
+      font-size: 1.6rem;
+      font-weight: bold;
+      margin: 0 0 0.1rem 0;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin: 1.2rem 0 0.4rem 0;
+    }
+
+    .updated {
+      font-size: 0.78rem;
+      color: #333;
+      margin-bottom: 0.8rem;
+    }
+
+    .avatar {
+      float: left;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      object-position: 52% 35%;
+      margin: 0.1rem 0.9rem 0.4rem 0;
+    }
+
+    p {
+      text-align: left;
+      hyphens: none;
+      word-break: normal;
+      overflow-wrap: normal;
+      margin: 0 0 0.85rem 0;
+    }
+
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    ul {
+      margin: 0.1rem 0 0.7rem 1.2rem;
+      padding: 0;
+    }
+
+    ul li {
+      hyphens: none;
+      word-break: normal;
+      margin-bottom: 0.35rem;
+    }
+
+    ul li a {
+      color: #0000cc;
+      text-decoration: underline;
+    }
+
+    ul li a:hover { text-decoration: none; }
+
+    .destaque {
+      font-weight: bold;
+      color: #111;
+    }
+
+    .projetos {
+      margin-top: 0.35rem;
+      border-top: 1px solid #cfcfcf;
+    }
+
+    .projeto {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 1rem;
+      align-items: center;
+      padding: 1.05rem 0.4rem;
+      color: #000;
+      text-decoration: none;
+      border-bottom: 1px solid #cfcfcf;
+    }
+
+    .projeto:hover .projeto-titulo {
+      text-decoration: underline;
+    }
+
+    .projeto-categoria {
+      display: block;
+      margin-bottom: 0.3rem;
+      color: #555;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .projeto-titulo {
+      display: block;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1.35;
+    }
+
+    .projeto-seta {
+      color: #555;
+      font-size: 1.35rem;
+      line-height: 1;
+    }
+
+    @media (min-width: 768px) {
+      body { font-size: 0.95rem; }
+      #wrap { padding: 2.2rem 2rem 3.5rem; }
+      #nav { font-size: 0.95rem; }
+      .avatar { width: 120px; height: 120px; }
+    }
+
+    @media (max-width: 420px) {
+      #wrap { padding-left: 0.85rem; padding-right: 0.85rem; }
+      .avatar { width: 88px; height: 88px; }
+      p, ul li { overflow-wrap: break-word; }
+    }
+  </style>
+</head>
+<body>
+<div id="wrap">
+
+  <div id="nav">
+    <a href="#">Sobre mim</a> | <a href="#links">Links</a> | <a href="#projetos">Projetos</a>
+  </div>
+
+  <h1>Sobre mim</h1>
+  <div class="updated">Atualizado: 03 de janeiro de 2025.</div>
+
+  <div class="clearfix">
+    <img class="avatar" src="foto-perfil.png" alt="foto de perfil" />
+    <p>Uso o nome <em>Pyrrho</em> ou <em>Excession</em> na maioria das plataformas.</p>
+    <p>Sou autodidata, e meus interesses se concentram principalmente no trio formado por programação, matemática e filosofia. Estudo lógica como hobby há alguns anos, principalmente lógica clássica, lógica proposicional e FOL, embora eu também tenha bastante interesse em lógicas não clássicas.</p>
+  </div>
+
+  <p>Já programei em linguagens suficientes para não valer a pena listar todas, mas C++ continua sendo minha favorita. Tenho uma queda por soluções tecnicamente sofisticadas para problemas com restrições não convencionais, o que normalmente resulta em projetos desnecessariamente complexos, mas interessantes do ponto de vista estrutural e lógico.</p>
+
+  <p>Tenho bastante interesse em teoria dos conjuntos, teoria da prova, fundamentos da lógica, formalização e sistemas simbólicos em geral. Também gosto de áreas ligadas à computação teórica, filosofia da lógica e filosofia da matemática.</p>
+
+  <p>Também estudo matemática pura, com interesse especial em análise real e álgebra abstrata. Em análise real, me concentro no estudo rigoroso de limites, continuidade, convergência, derivadas e integrais. Em álgebra abstrata, estudo estruturas como grupos, anéis e corpos, suas propriedades e as relações entre elas.</p>
+
+  <p>Entre as áreas que mais me interessam dentro da lógica estão lógicas não clássicas, especialmente lógicas relevantes, paraconsistentes, subestruturais, lógica conexiva, <em>negative free logic</em> e algumas lógicas modais. Também tenho interesse na história da lógica, principalmente lógica medieval e lógica antiga.</p>
+
+  <p>Além disso, me interesso bastante por semântica, paradoxos semânticos, epistemologia e pelas relações entre matemática, linguagem e computação.</p>
+
+  <p>Atualmente também participo do desenvolvimento de uma IA própria junto de alguns parceiros um projeto ainda em desenvolvimento. Paralelamente e não muito relevante.. já desenvolvi cerca de cinco bots para Discord (sistemas multifuncionais), para comunidades grandes</p>
+
+  <p>Você pode ter ouvido falar de mim porque:</p>
+
+  <ul>
+    <li><span class="destaque">Sou dono do maior servidor brasileiro de matemática do Discord e estou bem ativo em servidores acadêmicos e parceiros do Discord.</span></li>
+    <li>Sou dono de 2 grandes servidores acadêmicos do Discord (gringo): <a href="https://discord.gg/bBhfRvb2WT">Math Exposition</a> e <a href="https://discord.gg/maths">Mathematics</a>.</li>
+  </ul>
+
+  <h2 id="links">Links</h2>
+
+  <ul>
+    <li>Discord: <a href="https://discord.com/users/695037018127990814">@pyrrhh</a></li>
+    <li>Servidor: <a href="https://discord.gg/mathbr">Matemática</a></li>
+    <li>IA: <a href="https://revolutx-750ruh3i7-louis2220s-projects.vercel.app/">Revolutx</a></li>
+  </ul>
+
+  <h2 id="projetos">Projetos</h2>
+
+  <div class="projetos">
+    <a class="projeto" href="https://valley-april-e2f.notion.site/O-que-L-gica-29b9e3f3169980f988dec1017f881861?pvs=74" target="_blank" rel="noopener noreferrer">
+      <span><span class="projeto-categoria">Lógica</span><span class="projeto-titulo">O que é Lógica?</span></span>
+      <span class="projeto-seta" aria-hidden="true">↗</span>
+    </a>
+    <a class="projeto" href="https://valley-april-e2f.notion.site/Priest-e-sua-posi-o-problem-tica-1a09e3f31699805e9488e377dc56eeb9" target="_blank" rel="noopener noreferrer">
+      <span><span class="projeto-categoria">Filosofia da lógica</span><span class="projeto-titulo">Priest e sua posição problemática</span></span>
+      <span class="projeto-seta" aria-hidden="true">↗</span>
+    </a>
+    <a class="projeto" href="https://valley-april-e2f.notion.site/Infinito-Potencial-vs-Infinito-Atual-Construtivismo-e-os-Fundamentos-da-Matem-tica-3bd9e3f3169980e3af89f165a9096a23?pvs=74" target="_blank" rel="noopener noreferrer">
+      <span><span class="projeto-categoria">Fundamentos</span><span class="projeto-titulo">Infinito Potencial vs. Infinito Atual: Construtivismo e os Fundamentos da Matemática</span></span>
+      <span class="projeto-seta" aria-hidden="true">↗</span>
+    </a>
+    <a class="projeto" href="https://valley-april-e2f.notion.site/3bf9e3f316998098abecc22bbc98ef3c?v=3bf9e3f3169980f79f8c000c289d6c81" target="_blank" rel="noopener noreferrer">
+      <span><span class="projeto-categoria">Lógica / Paradoxos</span><span class="projeto-titulo">Paradoxo de Curry, Verdade Ingênua e Trivialidade</span></span>
+      <span class="projeto-seta" aria-hidden="true">↗</span>
+    </a>
+    <a class="projeto" href="https://valley-april-e2f.notion.site/3c09e3f31699807fa484cfd6d24ecfbd?v=3c09e3f31699804bb641000c7d60411d" target="_blank" rel="noopener noreferrer">
+      <span><span class="projeto-categoria">Lógica não clássica</span><span class="projeto-titulo">Lógicas que excluem LEM podem ser fidedignas?</span></span>
+      <span class="projeto-seta" aria-hidden="true">↗</span>
+    </a>
+  </div>
+
+</div>
+</body>
+</html>
